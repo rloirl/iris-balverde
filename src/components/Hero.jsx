@@ -4,7 +4,7 @@ const Hero = () => {
   return (
     <section
       id="home"
-      className="min-h-screen relative flex items-center justify-center pt-20 overflow-hidden"
+      className="min-h-screen relative flex items-center justify-center pt-20 pb-0 overflow-hidden"
       style={{
         backgroundImage: 'url(./Assets/bg1.png)',
         backgroundSize: 'cover',
@@ -27,8 +27,8 @@ const Hero = () => {
       />
       
       <img
-        src="./Assets/obj2-rabbit.png"
-        alt="Rabbit decoration"
+        src="./Assets/obj10-bee.png"
+        alt="Bee decoration"
         className="absolute top-1/2 right-1 md:right-4 lg:right-20 w-32 md:w-44 lg:w-45 animate-float z-10"
       />
 
