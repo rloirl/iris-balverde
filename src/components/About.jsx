@@ -3,9 +3,9 @@ import React, { useState, useEffect } from 'react';
 const About = () => {
   const [currentImage, setCurrentImage] = useState(0);
   const images = [
-    '/Assets/about1.jpg',
-    '/Assets/about2.jpg',
-    '/Assets/about3.jpg'
+    './Assets/about1.jpg',
+    './Assets/about2.jpg',
+    './Assets/about3.jpg'
   ];
 
   // Auto-advance carousel every 3 seconds
@@ -22,7 +22,7 @@ const About = () => {
       id="about"
       className="min-h-screen relative flex items-center justify-center py-20 overflow-hidden"
       style={{
-        backgroundImage: 'url(/Assets/bg2.png)',
+        backgroundImage: 'url(./Assets/bg2.png)',
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         backgroundRepeat: 'no-repeat',
@@ -30,7 +30,7 @@ const About = () => {
     >
       {/* Heart Sticker */}
       <img
-        src="/Assets/obj5-heart.png"
+        src="./Assets/obj5-heart.png"
         alt="Heart decoration"
         className="absolute top-20 right-8 md:right-16 lg:right-24 w-28 md:w-36 lg:w-44 animate-pulse z-25"
       />

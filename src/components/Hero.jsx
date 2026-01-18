@@ -6,7 +6,7 @@ const Hero = () => {
       id="home"
       className="min-h-screen relative flex items-center justify-center pt-20 overflow-hidden"
       style={{
-        backgroundImage: 'url(/Assets/bg1.png)',
+        backgroundImage: 'url(./Assets/bg1.png)',
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         backgroundRepeat: 'no-repeat',
@@ -14,20 +14,20 @@ const Hero = () => {
     >
       {/* Decorative Stickers */}
       <img
-        src="/Assets/obj4-flower.png"
+        src="./Assets/obj4-flower.png"
         alt="Flower decoration"
         className="absolute top-1/4 left-3 md:left-8 lg:left-20 -translate-y-1/3 w-32 md:w-48 lg:w-60 animate-float z-10"
       />
       
       {/* Butterfly and Rabbit - Overlapping on Right Side */}
       <img
-        src="/Assets/obj1-butterfly.png"
+        src="./Assets/obj1-butterfly.png"
         alt="Butterfly decoration"
         className="absolute top-[20%] right-1 md:right-4 lg:right-12 w-28 md:w-40 lg:w-60 animate-float-delayed z-20"
       />
       
       <img
-        src="/Assets/obj2-rabbit.png"
+        src="./Assets/obj2-rabbit.png"
         alt="Rabbit decoration"
         className="absolute top-1/2 right-1 md:right-4 lg:right-20 w-32 md:w-44 lg:w-45 animate-float z-10"
       />
@@ -48,7 +48,7 @@ const Hero = () => {
               Get to know me!
             </p>
             <img
-              src="/Assets/obj3-me.png"
+              src="./Assets/obj3-me.png"
               alt="Get to know me"
               onClick={() => document.getElementById('about').scrollIntoView({ behavior: 'smooth' })}
               className="w-32 md:w-40 lg:w-48 hover:scale-105 transition-transform duration-300 cursor-pointer"

@@ -79,7 +79,7 @@ const Experience = () => {
       id="experience"
       className="min-h-screen relative flex items-center justify-center py-20 overflow-hidden"
       style={{
-        backgroundImage: 'url(/Assets/bg4.png)',
+        backgroundImage: 'url(./Assets/bg4.png)',
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         backgroundRepeat: 'no-repeat',
@@ -93,7 +93,7 @@ const Experience = () => {
               Experience
             </h2>
             <img
-              src="/Assets/obj7-cow.png"
+              src="./Assets/obj7-cow.png"
               alt="Cow decoration"
               className="absolute right-0 md:right-8 lg:right-16 top-1/2 transform -translate-y-3/4 w-24 md:w-32 lg:w-40 animate-float z-10"
             />

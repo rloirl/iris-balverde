@@ -24,8 +24,8 @@ const Works = () => {
     {
       id: 1,
       title: 'Dayawism: A Philippine Mythology 2D RPG',
-      image: '/Assets/work1.png',
-      images: ['/Assets/work1.png', '/Assets/work1-a.png', '/Assets/work1-b.png', '/Assets/work1-c.png'],
+      image: './Assets/work1.png',
+      images: ['./Assets/work1.png', './Assets/work1-a.png', './Assets/work1-b.png', './Assets/work1-c.png'],
       category: 'Web Design',
       technologies: ['UI/UX', 'Game development', 'Bootstrap', '', 'Node.js'],
       details: 'This game merges the rich cultural heritage of Filipino mythology with modern game mechanics to engage students in learning about ancient mythological creatures, gods, and legends. Through an interactive journey, players explore various chapters based on Filipino folklore, completing quests, battling creatures in turn-based combat, and answering educational quizzes to progress.',
@@ -34,8 +34,8 @@ const Works = () => {
     {
       id: 2,
       title: 'BLVCK Entertainment Official Website',
-      image: '/Assets/work6.png',
-      images: ['/Assets/work6.png', '/Assets/work6-artists.png', '/Assets/work6-media.png', '/Assets/work6-about.png'],
+      image: './Assets/work6.png',
+      images: ['./Assets/work6.png', './Assets/work6-artists.png', './Assets/work6-media.png', './Assets/work6-about.png'],
       category: 'Web Development',
       technologies: ['React.js', 'Vite', 'Tailwind CSS'],
       details: 'Official digital presence for BLVCK Entertainment, a modern website built with React and Vite. The website showcases the company\'s brand identity, artist roster, film productions, media content, and entertainment services including movies, concerts, advertisements, and talent management. Features responsive design, embedded YouTube and TikTok content, dynamic navigation, and a professional dark-themed aesthetic with modular component architecture for future scalability.',
@@ -44,8 +44,8 @@ const Works = () => {
     {
       id: 3,
       title: 'Bake n\' Chew',
-      image: '/Assets/work7.png',
-      images: ['/Assets/work7.png', '/Assets/work7-a.png', '/Assets/work7-b.png'],
+      image: './Assets/work7.png',
+      images: ['./Assets/work7.png', './Assets/work7-a.png', './Assets/work7-b.png'],
       category: 'E-commerce',
       technologies: ['Wix', 'E-commerce', 'Online Store'],
       details: 'An online store website designed to sell baked goods through an easy-to-use e-commerce platform built with Wix. The system allows customers to browse products, add items to shopping cart, and complete full transaction cycles online. Features include product browsing, shopping cart functionality, checkout and order submission, and admin dashboard for managing products and orders. Accessible 24/7 through web browsers with user-friendly interface and efficient page loading.',
@@ -54,7 +54,7 @@ const Works = () => {
     {
       id: 4,
       title: 'TrackIt: Expenses Tracker',
-      image: '/Assets/work2.png',
+      image: './Assets/work2.png',
       category: 'App',
       technologies: ['UI/UX', ' Website Builder', 'Founder Tools'],
       details: 'TrackIt is an intuitive and efficient expense tracking app designed to help users manage their finances with ease. By providing real-time insights into spending patterns, TrackIt allows users to set and monitor budget goals, track daily expenses, and gain a clear overview of their financial progress. With features like detailed reports, activity graphs, and seamless integration with your financial data, TrackIt empowers users to make smarter, more informed decisions about their spending, all while staying organized and on top of their financial goals.'
@@ -62,7 +62,7 @@ const Works = () => {
     {
       id: 5,
       title: 'TECHLIB: Library Management System',
-      image: '/Assets/work3.png',
+      image: './Assets/work3.png',
       category: 'System',
       technologies: ['Barcode Technology', 'Database Management', 'System Design'],
       details: 'TECHLIB is a Library Management System designed for Acacia Elementary School that automates library operations including book tracking, member management, and borrowing transactions. The system features barcode-based book identification, automated record keeping, real-time availability updates, and comprehensive report generation. It replaces manual processes with a computerized solution that minimizes errors, improves accuracy, and speeds up library operations for librarians, students, and school administrators.'
@@ -70,7 +70,7 @@ const Works = () => {
     {
       id: 6,
       title: 'Telegram-Controlled Web Automation System',
-      image: '/Assets/work4.png',
+      image: './Assets/work4.png',
       category: 'Automation',
       technologies: ['Python', 'Playwright', 'Telegram Bot', 'Web Automation'],
       details: 'A Python-based automation framework that demonstrates remote-controlled browser automation using Telegram bot commands. The system manages multiple test accounts, performs automated web interactions, and features CAPTCHA detection, error handling with automatic retries, proxy support, and comprehensive logging. It integrates Playwright for browser automation with a Telegram bot interface for remote control, providing real-time monitoring and detailed execution logs for debugging and analysis.'
@@ -78,7 +78,7 @@ const Works = () => {
     {
       id: 7,
       title: 'Chrome Extension Facebook AutoLogout',
-      image: '/Assets/work5.png',
+      image: './Assets/work5.png',
       category: 'Extension',
       technologies: ['Chrome Extension', 'JavaScript', 'Chrome APIs', 'Web Automation'],
       details: 'A Google Chrome Extension designed to automate repetitive navigation actions on Facebook Messages with a focus on privacy and security settings. Features user-controlled automation with configurable loop counts (1-1000) and delays (500-10,000ms), automated navigation to encrypted chats and security alerts, start/stop controls via popup UI, and uses Chrome Extension APIs (tabs, activeTab, scripting). The extension provides privacy-conscious users with an efficient way to manage security settings without manual repetitive navigation, all while keeping data local to the browser.'
@@ -86,24 +86,24 @@ const Works = () => {
   ];
 
   const artworks = [
-    { id: 1, image: '/Assets/art1.png', title: 'Art Piece 1' },
-    { id: 2, image: '/Assets/art2.png', title: 'Art Piece 2' },
-    { id: 3, image: '/Assets/art3.gif', title: 'Art Piece 3' },
-    { id: 4, image: '/Assets/art4.png', title: 'Art Piece 4' },
-    { id: 5, image: '/Assets/art5.png', title: 'Art Piece 5' },
-    { id: 6, image: '/Assets/art6.png', title: 'Art Piece 6' },
-    { id: 7, image: '/Assets/art7.png', title: 'Art Piece 7' },
-    { id: 8, image: '/Assets/art8.gif', title: 'Art Piece 8' },
-    { id: 9, image: '/Assets/art9.png', title: 'Art Piece 9' },
-    { id: 10, image: '/Assets/art10.png', title: 'Art Piece 10' },
-    { id: 11, image: '/Assets/art11.png', title: 'Art Piece 11' },
-    { id: 12, image: '/Assets/art12.png', title: 'Art Piece 12' },
-    { id: 13, image: '/Assets/art13.png', title: 'Art Piece 13' },
-    { id: 14, image: '/Assets/art14.png', title: 'Art Piece 14' },
-    { id: 15, image: '/Assets/art15.png', title: 'Art Piece 15' },
-    { id: 16, image: '/Assets/art16.png', title: 'Art Piece 16' },
-    { id: 17, image: '/Assets/art17.png', title: 'Art Piece 17' },
-    { id: 18, image: '/Assets/art18.gif', title: 'Art Piece 18' }
+    { id: 1, image: './Assets/art1.png', title: 'Art Piece 1' },
+    { id: 2, image: './Assets/art2.png', title: 'Art Piece 2' },
+    { id: 3, image: './Assets/art3.gif', title: 'Art Piece 3' },
+    { id: 4, image: './Assets/art4.png', title: 'Art Piece 4' },
+    { id: 5, image: './Assets/art5.png', title: 'Art Piece 5' },
+    { id: 6, image: './Assets/art6.png', title: 'Art Piece 6' },
+    { id: 7, image: './Assets/art7.png', title: 'Art Piece 7' },
+    { id: 8, image: './Assets/art8.gif', title: 'Art Piece 8' },
+    { id: 9, image: './Assets/art9.png', title: 'Art Piece 9' },
+    { id: 10, image: './Assets/art10.png', title: 'Art Piece 10' },
+    { id: 11, image: './Assets/art11.png', title: 'Art Piece 11' },
+    { id: 12, image: './Assets/art12.png', title: 'Art Piece 12' },
+    { id: 13, image: './Assets/art13.png', title: 'Art Piece 13' },
+    { id: 14, image: './Assets/art14.png', title: 'Art Piece 14' },
+    { id: 15, image: './Assets/art15.png', title: 'Art Piece 15' },
+    { id: 16, image: './Assets/art16.png', title: 'Art Piece 16' },
+    { id: 17, image: './Assets/art17.png', title: 'Art Piece 17' },
+    { id: 18, image: './Assets/art18.gif', title: 'Art Piece 18' }
   ];
 
   const displayedWorks = showAll ? works : works.slice(0, 4);
@@ -113,7 +113,7 @@ const Works = () => {
       id="works"
       className="min-h-screen relative flex items-center justify-center py-20 overflow-hidden"
       style={{
-        backgroundImage: 'url(/Assets/bg3.png)',
+        backgroundImage: 'url(./Assets/bg3.png)',
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         backgroundRepeat: 'no-repeat',

@@ -41,11 +41,11 @@ const CustomCursor = () => {
       switch (cursorType) {
         case 'link':
         case 'pointer':
-          return "url('/Assets/Cosmica Angel Rose/link select.cur'), pointer";
+          return "url('./Assets/Cosmica Angel Rose/link select.cur'), pointer";
         case 'text':
-          return "url('/Assets/Cosmica Angel Rose/text select.cur'), text";
+          return "url('./Assets/Cosmica Angel Rose/text select.cur'), text";
         default:
-          return "url('/Assets/Cosmica Angel Rose/default.cur'), auto";
+          return "url('./Assets/Cosmica Angel Rose/default.cur'), auto";
       }
     };
 

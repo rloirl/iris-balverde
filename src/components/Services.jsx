@@ -8,35 +8,35 @@ const Services = () => {
       id: 1,
       name: 'Web Development & Design',
       description: 'Full-stack development with React, Node.js, and responsive design',
-      image: '/Assets/item1.png',
+      image: './Assets/item1.png',
       position: { top: '60%', left: '30%', width: '30%' }
     },
     {
       id: 2,
       name: 'UI/UX Design',
       description: 'User interface design, prototyping, and experience optimization',
-      image: '/Assets/item2.png',
+      image: './Assets/item2.png',
       position: {  top: '65%', left: '50%', width: '20%' }
     },
     {
       id: 3,
       name: 'Graphic Design & Branding',
       description: 'Digital illustration, brand identity, and marketing materials',
-      image: '/Assets/item3.png',
+      image: './Assets/item3.png',
       position: { top: '35%', left: '25%', width: '30%' }
     },
     {
       id: 4,
       name: 'Custom System Development',
       description: 'Database-driven applications, management systems, and APIs',
-      image: '/Assets/item4.png',
+      image: './Assets/item4.png',
       position: { top: '40%', left: '50%', width: '20%' }
     },
     {
       id: 5,
       name: 'Automation & Bot Development',
       description: 'Web automation, Telegram/Discord bots, and task automation',
-      image: '/Assets/item6.png',
+      image: './Assets/item6.png',
       position: { top: '40%', left: '70%', width: '15%' }
       
     },
@@ -45,7 +45,7 @@ const Services = () => {
       id: 6,
       name: 'Game Development',
       description: '2D game design, educational games, and interactive experiences',
-      image: '/Assets/item5.png',
+      image: './Assets/item5.png',
       position: { top: '65%', left: '70%', width: '20%' }
       
     }
@@ -83,12 +83,12 @@ const Services = () => {
           <div className="relative w-full max-w-3xl md:max-w-4xl mx-auto">
             {/* Decorative Elements */}
             <img
-              src="/Assets/obj9-mush.png"
+              src="./Assets/obj9-mush.png"
               alt="Cow decoration"
               className="absolute -left-8 md:-left-12 lg:-left-16 top-50 md:top-56 lg:top-56 w-20 md:w-40 lg:w-48 animate-float z-20"
             />
             <img
-              src="/Assets/obj8-plastic.png"
+              src="./Assets/obj8-plastic.png"
               alt="Plastic decoration"
               className="absolute -right-8 md:-right-12 lg:-right-16 top-8 md:top-12 lg:top-16 w-20 md:w-40 lg:w-48 animate-float z-20"
             />
@@ -96,7 +96,7 @@ const Services = () => {
             {/* Cart Background */}
             <div className="relative w-full" style={{ paddingBottom: '85%' }}>
               <img
-                src="/Assets/services-cart.png"
+                src="./Assets/services-cart.png"
                 alt="Services Cart"
                 className="absolute inset-0 w-full h-full object-contain"
               />
