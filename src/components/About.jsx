@@ -37,7 +37,7 @@ const About = () => {
 
       <div className="container mx-auto px-4 z-20">
         <div className="max-w-6xl mx-auto">
-          <h2 className="font-libre text-4xl md:text-5xl lg:text-6xl font-bold text-center italic mb-12 relative z-40" style={{ color: '#922B2E' }}>
+          <h2 className="font-libre text-4xl md:text-5xl lg:text-6xl font-bold text-center italic mb-12 mt-16 relative z-40" style={{ color: '#922B2E' }}>
             About Me
           </h2>
 

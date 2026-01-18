@@ -27,7 +27,7 @@ const Works = () => {
       image: './Assets/work1.png',
       images: ['./Assets/work1.png', './Assets/work1-a.png', './Assets/work1-b.png', './Assets/work1-c.png'],
       category: 'Web Design',
-      technologies: ['UI/UX', 'Game development', 'Bootstrap', '', 'Node.js'],
+      technologies: ['UI/UX', 'Game development', 'Bootstrap', 'Node.js'],
       details: 'This game merges the rich cultural heritage of Filipino mythology with modern game mechanics to engage students in learning about ancient mythological creatures, gods, and legends. Through an interactive journey, players explore various chapters based on Filipino folklore, completing quests, battling creatures in turn-based combat, and answering educational quizzes to progress.',
       url: 'https://dayawism-login.web.app/'
     },
@@ -47,7 +47,7 @@ const Works = () => {
       image: './Assets/work7.png',
       images: ['./Assets/work7.png', './Assets/work7-a.png', './Assets/work7-b.png'],
       category: 'E-commerce',
-      technologies: ['Wix', 'E-commerce', 'Online Store'],
+      technologies: ['UI/UX', 'E-commerce', 'Online Store'],
       details: 'An online store website designed to sell baked goods through an easy-to-use e-commerce platform built with Wix. The system allows customers to browse products, add items to shopping cart, and complete full transaction cycles online. Features include product browsing, shopping cart functionality, checkout and order submission, and admin dashboard for managing products and orders. Accessible 24/7 through web browsers with user-friendly interface and efficient page loading.',
       url: 'https://itsolutionsshs.wixsite.com/bakenchew'
     },
