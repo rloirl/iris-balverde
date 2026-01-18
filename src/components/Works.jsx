@@ -28,7 +28,8 @@ const Works = () => {
       images: ['/Assets/work1.png', '/Assets/work1-a.png', '/Assets/work1-b.png', '/Assets/work1-c.png'],
       category: 'Web Design',
       technologies: ['UI/UX', 'Game development', 'Bootstrap', '', 'Node.js'],
-      details: 'This game merges the rich cultural heritage of Filipino mythology with modern game mechanics to engage students in learning about ancient mythological creatures, gods, and legends. Through an interactive journey, players explore various chapters based on Filipino folklore, completing quests, battling creatures in turn-based combat, and answering educational quizzes to progress.'
+      details: 'This game merges the rich cultural heritage of Filipino mythology with modern game mechanics to engage students in learning about ancient mythological creatures, gods, and legends. Through an interactive journey, players explore various chapters based on Filipino folklore, completing quests, battling creatures in turn-based combat, and answering educational quizzes to progress.',
+      url: 'https://dayawism-login.web.app/'
     },
     {
       id: 2,
@@ -37,10 +38,21 @@ const Works = () => {
       images: ['/Assets/work6.png', '/Assets/work6-artists.png', '/Assets/work6-media.png', '/Assets/work6-about.png'],
       category: 'Web Development',
       technologies: ['React.js', 'Vite', 'Tailwind CSS'],
-      details: 'Official digital presence for BLVCK Entertainment, a modern website built with React and Vite. The website showcases the company\'s brand identity, artist roster, film productions, media content, and entertainment services including movies, concerts, advertisements, and talent management. Features responsive design, embedded YouTube and TikTok content, dynamic navigation, and a professional dark-themed aesthetic with modular component architecture for future scalability.'
+      details: 'Official digital presence for BLVCK Entertainment, a modern website built with React and Vite. The website showcases the company\'s brand identity, artist roster, film productions, media content, and entertainment services including movies, concerts, advertisements, and talent management. Features responsive design, embedded YouTube and TikTok content, dynamic navigation, and a professional dark-themed aesthetic with modular component architecture for future scalability.',
+      url: 'https://blvckentertainment.com.ph'
     },
     {
       id: 3,
+      title: 'Bake n\' Chew',
+      image: '/Assets/work7.png',
+      images: ['/Assets/work7.png', '/Assets/work7-a.png', '/Assets/work7-b.png'],
+      category: 'E-commerce',
+      technologies: ['Wix', 'E-commerce', 'Online Store'],
+      details: 'An online store website designed to sell baked goods through an easy-to-use e-commerce platform built with Wix. The system allows customers to browse products, add items to shopping cart, and complete full transaction cycles online. Features include product browsing, shopping cart functionality, checkout and order submission, and admin dashboard for managing products and orders. Accessible 24/7 through web browsers with user-friendly interface and efficient page loading.',
+      url: 'https://itsolutionsshs.wixsite.com/bakenchew'
+    },
+    {
+      id: 4,
       title: 'TrackIt: Expenses Tracker',
       image: '/Assets/work2.png',
       category: 'App',
@@ -48,7 +60,7 @@ const Works = () => {
       details: 'TrackIt is an intuitive and efficient expense tracking app designed to help users manage their finances with ease. By providing real-time insights into spending patterns, TrackIt allows users to set and monitor budget goals, track daily expenses, and gain a clear overview of their financial progress. With features like detailed reports, activity graphs, and seamless integration with your financial data, TrackIt empowers users to make smarter, more informed decisions about their spending, all while staying organized and on top of their financial goals.'
     },
     {
-      id: 4,
+      id: 5,
       title: 'TECHLIB: Library Management System',
       image: '/Assets/work3.png',
       category: 'System',
@@ -56,7 +68,7 @@ const Works = () => {
       details: 'TECHLIB is a Library Management System designed for Acacia Elementary School that automates library operations including book tracking, member management, and borrowing transactions. The system features barcode-based book identification, automated record keeping, real-time availability updates, and comprehensive report generation. It replaces manual processes with a computerized solution that minimizes errors, improves accuracy, and speeds up library operations for librarians, students, and school administrators.'
     },
     {
-      id: 5,
+      id: 6,
       title: 'Telegram-Controlled Web Automation System',
       image: '/Assets/work4.png',
       category: 'Automation',
@@ -64,7 +76,7 @@ const Works = () => {
       details: 'A Python-based automation framework that demonstrates remote-controlled browser automation using Telegram bot commands. The system manages multiple test accounts, performs automated web interactions, and features CAPTCHA detection, error handling with automatic retries, proxy support, and comprehensive logging. It integrates Playwright for browser automation with a Telegram bot interface for remote control, providing real-time monitoring and detailed execution logs for debugging and analysis.'
     },
     {
-      id: 6,
+      id: 7,
       title: 'Chrome Extension Facebook AutoLogout',
       image: '/Assets/work5.png',
       category: 'Extension',
@@ -326,9 +338,20 @@ const Works = () => {
               ))}
             </div>
             
-            <button className="font-dm-sans bg-pink-300 hover:bg-pink-400 text-white px-6 py-3 rounded-full font-semibold transition-all duration-300 w-full">
-              View Live Project
-            </button>
+            {selectedWork.url ? (
+              <a
+                href={selectedWork.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="font-dm-sans bg-pink-300 hover:bg-pink-400 text-white px-6 py-3 rounded-full font-semibold transition-all duration-300 w-full block text-center"
+              >
+                View Live Project
+              </a>
+            ) : (
+              <button className="font-dm-sans bg-gray-300 text-gray-500 px-6 py-3 rounded-full font-semibold w-full cursor-not-allowed" disabled>
+                No Live Demo
+              </button>
+            )}
           </div>
         </div>
       )}

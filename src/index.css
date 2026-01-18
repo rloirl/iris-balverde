@@ -57,36 +57,28 @@ html {
 
 /* Custom Cursor Styles */
 * {
-  cursor: none !important;
+  cursor: url('/Assets/Cosmica Angel Rose/default.cur'), auto !important;
 }
 
-.cursor-wrapper {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  pointer-events: none;
-  z-index: 9999;
+a, button, [role="button"], .cursor-pointer {
+  cursor: url('/Assets/Cosmica Angel Rose/link select.cur'), pointer !important;
 }
 
-.custom-cursor-image {
-  position: fixed;
-  width: 32px;
-  height: 32px;
-  transform: translate(-50%, -50%);
-  pointer-events: none;
-  z-index: 10000;
-  transition: transform 0.1s ease-out;
+input, textarea {
+  cursor: url('/Assets/Cosmica Angel Rose/text select.cur'), text !important;
+}
+
+.cursor-move {
+  cursor: url('/Assets/Cosmica Angel Rose/move.cur'), move !important;
+}
+
+.cursor-help {
+  cursor: url('/Assets/Cosmica Angel Rose/help select.cur'), help !important;
 }
 
 /* Hide custom cursor on mobile/touch devices */
 @media (hover: none) and (pointer: coarse) {
   * {
     cursor: auto !important;
-  }
-  
-  .cursor-wrapper {
-    display: none;
   }
 }
