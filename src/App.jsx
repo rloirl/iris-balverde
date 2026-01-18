@@ -14,7 +14,6 @@ function App() {
       <CustomCursor />
       <Navbar />
       <Hero />
-      <div style={{ backgroundColor: '#FAF1E8', height: '64px' }} className="md:h-20"></div>
       <About />
       <Works />
       <Services />
