@@ -17,7 +17,7 @@ const Experience = () => {
     },
     {
        id: 2,
-      period: 'Sept - Dec 2025',
+      period: 'Sept - Jan 2025',
       role: 'Customer Care Representative',
       company: 'Alorica Philippines',
       responsibilities: [
