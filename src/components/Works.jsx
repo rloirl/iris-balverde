@@ -29,7 +29,7 @@ const Works = () => {
       category: 'Web Design',
       technologies: ['UI/UX', 'Game development', 'Bootstrap', 'Node.js'],
       details: 'This game merges the rich cultural heritage of Filipino mythology with modern game mechanics to engage students in learning about ancient mythological creatures, gods, and legends. Through an interactive journey, players explore various chapters based on Filipino folklore, completing quests, battling creatures in turn-based combat, and answering educational quizzes to progress.',
-      url: 'https://dayawism-login.web.app/'
+      url: 'https://dayawism-login.web.app/home1.html'
     },
     {
       id: 2,
