@@ -4,11 +4,9 @@ const About = () => {
   const [currentImage, setCurrentImage] = useState(0);
   const images = [
     './Assets/about1.jpg',
-    './Assets/about2.jpg',
     './Assets/about3.jpg'
   ];
 
-  // Auto-advance carousel every 3 seconds
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentImage((prev) => (prev + 1) % images.length);

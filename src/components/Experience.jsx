@@ -4,15 +4,17 @@ const Experience = () => {
   const workExperience = [
     {
      id: 1,
-      period: 'Feb - May 2025',
-      role: 'Web Developer and Production Assistant',
-      company: 'Blvck Entertainment Production Inc. - OJT',
+     period: '2026',
+      role: 'E-commerce Performance & Data Analyst',
+      company: 'San-Yang Intertrade Corporation',
       responsibilities: [
-        'Partnered with the creative team, stakeholders to define system requirements for the company website',
-        'Designed/implemented solutions using ReactJs and Tailwind CSS, ensuring alignment with business branding',
-        'Conducted requirements validation and iterative updates based on stakeholder feedback',
-        'Provided technical support and documentation for desktop, peripheral, and operating systems',
-        'Acted as a liaison between business users and the technical team for routine requests and troubleshooting'
+        'Tracked and analyzed performance across Shopee, Lazada, and TikTok Shop',
+        'Monitored key metrics (GMV, revenue, orders, conversion, traffic, CTR, AOV, ROAS)',
+        'Processed orders, including PO creation and order transfers, and handled customer concerns',
+        'Built and maintained performance dashboards',
+        'Managed campaigns (discounts, vouchers, pricing) with accuracy',
+        'Analyzed product performance to identify best-sellers and low performers',
+        'Recommended pricing, bundling, and promotional strategies'
       ]
     },
     {
@@ -27,6 +29,19 @@ const Experience = () => {
         'Accurately document customer interactions and update account information',
         'Promote company products, services, and add-ons when appropriate',
         'Meet performance metrics such as customer satisfaction, call quality, and resolution time'
+      ]
+    },
+    {
+      id: 3,
+      period: 'Feb - May 2025',
+      role: 'Web Developer and Production Assistant',
+      company: 'Blvck Entertainment Production Inc. - OJT',
+      responsibilities: [
+        'Partnered with the creative team, stakeholders to define system requirements for the company website',
+        'Designed/implemented solutions using ReactJs and Tailwind CSS, ensuring alignment with business branding',
+        'Conducted requirements validation and iterative updates based on stakeholder feedback',
+        'Provided technical support and documentation for desktop, peripheral, and operating systems',
+        'Acted as a liaison between business users and the technical team for routine requests and troubleshooting'
       ]
     }
   ];
@@ -55,16 +70,13 @@ const Experience = () => {
     }
   ];
 
-  const tools = [
-    'React.js',
-    'Node.js',
-    'Java',
-    'Python',
-    'C#',
-    'HTML/CSS/JavaScript',
-    'SQL Databases',
-    'Figma',
-    'Adobe Flash'
+  const skills = [
+    'E-commerce Analytics (Shopee, Lazada, TikTok Shop)',
+    'Canva + Photoshop design skills for marketing materials',
+    'Front-End Development (React.js, Tailwind CSS, HTML, CSS, JavaScript)',
+    'Data Analysis & Reporting (Excel, GSheets)',
+    'Attention to Detail & Time Management',
+    'Live Selling (Facebook, Shopee, Lazada, TikTok Shop)'
   ];
 
   const awards = [
@@ -136,15 +148,15 @@ const Experience = () => {
                 </div>
               ))}
 
-              {/* Tools & Software */}
+              {/* Skills */}
               <div className="bg-white/90 backdrop-blur-sm rounded-3xl p-6 shadow-xl">
                 <h3 className="font-libre text-2xl font-bold mb-4" style={{ color: '#922B2E' }}>
-                  Tools & Technologies
+                  Skills
                 </h3>
                 <div className="flex flex-wrap gap-2">
-                  {tools.map((tool, idx) => (
+                  {skills.map((skill, idx) => (
                     <span key={idx} className="bg-pink-50 text-pink-600 px-4 py-2 rounded-full text-sm font-dm-sans font-medium">
-                      {tool}
+                      {skill}
                     </span>
                   ))}
                 </div>
