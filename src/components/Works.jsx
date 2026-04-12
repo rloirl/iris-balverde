@@ -3,7 +3,7 @@ import React, { useState, useEffect } from 'react';
 const Works = () => {
   const [selectedWork, setSelectedWork] = useState(null);
   const [showAll, setShowAll] = useState(false);
-  const [activeTab, setActiveTab] = useState('projects'); // 'projects' or 'art'
+  const [activeTab, setActiveTab] = useState('projects'); // 'projects', 'art', or 'pubmats'
   const [selectedArt, setSelectedArt] = useState(null);
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
@@ -86,27 +86,45 @@ const Works = () => {
   ];
 
   const artworks = [
-    { id: 1, image: './Assets/art1.png', title: 'Art Piece 1' },
-    { id: 2, image: './Assets/art2.png', title: 'Art Piece 2' },
-    { id: 3, image: './Assets/art3.gif', title: 'Art Piece 3' },
-    { id: 4, image: './Assets/art4.png', title: 'Art Piece 4' },
-    { id: 5, image: './Assets/art5.png', title: 'Art Piece 5' },
-    { id: 6, image: './Assets/art6.png', title: 'Art Piece 6' },
-    { id: 7, image: './Assets/art7.png', title: 'Art Piece 7' },
-    { id: 8, image: './Assets/art8.gif', title: 'Art Piece 8' },
-    { id: 9, image: './Assets/art9.png', title: 'Art Piece 9' },
-    { id: 10, image: './Assets/art10.png', title: 'Art Piece 10' },
-    { id: 11, image: './Assets/art11.png', title: 'Art Piece 11' },
-    { id: 12, image: './Assets/art12.png', title: 'Art Piece 12' },
-    { id: 13, image: './Assets/art13.png', title: 'Art Piece 13' },
-    { id: 14, image: './Assets/art14.png', title: 'Art Piece 14' },
-    { id: 15, image: './Assets/art15.png', title: 'Art Piece 15' },
-    { id: 16, image: './Assets/art16.png', title: 'Art Piece 16' },
-    { id: 17, image: './Assets/art17.png', title: 'Art Piece 17' },
-    { id: 18, image: './Assets/art18.gif', title: 'Art Piece 18' }
+    { id: 1, image: './Assets/art1.png', title: 'Art Piece 1', type: 'art' },
+    { id: 2, image: './Assets/art2.png', title: 'Art Piece 2', type: 'art' },
+    { id: 3, image: './Assets/art3.gif', title: 'Art Piece 3', type: 'art' },
+    { id: 4, image: './Assets/art4.png', title: 'Art Piece 4', type: 'art' },
+    { id: 5, image: './Assets/art5.png', title: 'Art Piece 5', type: 'art' },
+    { id: 6, image: './Assets/art6.png', title: 'Art Piece 6', type: 'art' },
+    { id: 7, image: './Assets/art7.png', title: 'Art Piece 7', type: 'art' },
+    { id: 8, image: './Assets/art8.gif', title: 'Art Piece 8', type: 'art' },
+    { id: 9, image: './Assets/art9.png', title: 'Art Piece 9', type: 'art' },
+    { id: 10, image: './Assets/art10.png', title: 'Art Piece 10', type: 'art' },
+    { id: 11, image: './Assets/art11.png', title: 'Art Piece 11', type: 'art' },
+    { id: 12, image: './Assets/art12.png', title: 'Art Piece 12', type: 'art' },
+    { id: 13, image: './Assets/art13.png', title: 'Art Piece 13', type: 'art' },
+    { id: 14, image: './Assets/art14.png', title: 'Art Piece 14', type: 'art' },
+    { id: 15, image: './Assets/art15.png', title: 'Art Piece 15', type: 'art' },
+    { id: 16, image: './Assets/art16.png', title: 'Art Piece 16', type: 'art' },
+    { id: 17, image: './Assets/art17.png', title: 'Art Piece 17', type: 'art' },
+    { id: 18, image: './Assets/art18.gif', title: 'Art Piece 18', type: 'art' }
+  ];
+
+  const pubmats = [
+    { id: 1, image: './Assets/Pubmat 1.png', title: 'Pubmat 1', type: 'pubmat' },
+    { id: 2, image: './Assets/Pubmat 2.png', title: 'Pubmat 2', type: 'pubmat' },
+    { id: 3, image: './Assets/Pubmat 3.png', title: 'Pubmat 3', type: 'pubmat' },
+    { id: 4, image: './Assets/Pubmat 4.png', title: 'Pubmat 4', type: 'pubmat' },
+    { id: 5, image: './Assets/Pubmat 5.png', title: 'Pubmat 5', type: 'pubmat' },
+    { id: 6, image: './Assets/Pubmat 6.png', title: 'Pubmat 6', type: 'pubmat' },
+    { id: 7, image: './Assets/Pubmat 7.png', title: 'Pubmat 7', type: 'pubmat' },
+    { id: 8, image: './Assets/Pubmat 8.png', title: 'Pubmat 8', type: 'pubmat' },
+    { id: 9, image: './Assets/Pubmat 9.png', title: 'Pubmat 9', type: 'pubmat' },
+    { id: 10, image: './Assets/Pubmat 10.png', title: 'Pubmat 10', type: 'pubmat' },
+    { id: 11, image: './Assets/Pubmat 11.png', title: 'Pubmat 11', type: 'pubmat' },
+    { id: 12, image: './Assets/Pubmat 12.png', title: 'Pubmat 12', type: 'pubmat' },
+    { id: 13, image: './Assets/Pubmat 13.png', title: 'Pubmat 13', type: 'pubmat' },
+    { id: 14, image: './Assets/Pubmat 14.png', title: 'Pubmat 14', type: 'pubmat' }
   ];
 
   const displayedWorks = showAll ? works : works.slice(0, 4);
+  const galleryItems = selectedArt?.type === 'pubmat' ? pubmats : artworks;
 
   return (
     <section
@@ -152,6 +170,17 @@ const Works = () => {
               style={{ color: activeTab === 'art' ? 'white' : '#922B2E' }}
             >
               Art Gallery
+            </button>
+            <button
+              onClick={() => setActiveTab('pubmats')}
+              className={`font-dm-sans px-8 py-3 rounded-full font-semibold transition-all duration-300 shadow-lg transform hover:scale-105 ${
+                activeTab === 'pubmats'
+                  ? 'bg-pink-400 text-white'
+                  : 'bg-white hover:bg-pink-100'
+              }`}
+              style={{ color: activeTab === 'pubmats' ? 'white' : '#922B2E' }}
+            >
+              Pubmats
             </button>
           </div>
 
@@ -230,6 +259,35 @@ const Works = () => {
                     <div className="p-4 w-full">
                       <h3 className="font-libre text-xl font-bold text-white mb-1">
                         {art.title}
+                      </h3>
+                      <p className="font-dm-sans text-white/90 text-sm">
+                        Click to view full size
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </div>
+          )}
+
+          {/* Pubmats Grid */}
+          {activeTab === 'pubmats' && (
+            <div className="columns-1 md:columns-2 lg:columns-3 gap-6 space-y-6">
+              {pubmats.map((pubmat) => (
+                <div
+                  key={pubmat.id}
+                  className="break-inside-avoid cursor-pointer group relative overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300"
+                  onClick={() => setSelectedArt(pubmat)}
+                >
+                  <img
+                    src={pubmat.image}
+                    alt={pubmat.title}
+                    className="w-full h-auto object-cover transition-transform duration-500 group-hover:scale-110"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end">
+                    <div className="p-4 w-full">
+                      <h3 className="font-libre text-xl font-bold text-white mb-1">
+                        {pubmat.title}
                       </h3>
                       <p className="font-dm-sans text-white/90 text-sm">
                         Click to view full size
@@ -391,9 +449,9 @@ const Works = () => {
             <button
               onClick={(e) => {
                 e.stopPropagation();
-                const currentIndex = artworks.findIndex(a => a.id === selectedArt.id);
-                const prevIndex = currentIndex > 0 ? currentIndex - 1 : artworks.length - 1;
-                setSelectedArt(artworks[prevIndex]);
+                const currentIndex = galleryItems.findIndex(a => a.id === selectedArt.id);
+                const prevIndex = currentIndex > 0 ? currentIndex - 1 : galleryItems.length - 1;
+                setSelectedArt(galleryItems[prevIndex]);
               }}
               className="absolute left-4 top-1/2 -translate-y-1/2 bg-white/10 hover:bg-white/20 text-white rounded-full p-3 transition-all duration-200 backdrop-blur-sm"
             >
@@ -405,9 +463,9 @@ const Works = () => {
             <button
               onClick={(e) => {
                 e.stopPropagation();
-                const currentIndex = artworks.findIndex(a => a.id === selectedArt.id);
-                const nextIndex = currentIndex < artworks.length - 1 ? currentIndex + 1 : 0;
-                setSelectedArt(artworks[nextIndex]);
+                const currentIndex = galleryItems.findIndex(a => a.id === selectedArt.id);
+                const nextIndex = currentIndex < galleryItems.length - 1 ? currentIndex + 1 : 0;
+                setSelectedArt(galleryItems[nextIndex]);
               }}
               className="absolute right-4 top-1/2 -translate-y-1/2 bg-white/10 hover:bg-white/20 text-white rounded-full p-3 transition-all duration-200 backdrop-blur-sm"
             >
