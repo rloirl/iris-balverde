@@ -86,6 +86,8 @@ const Works = () => {
   ];
 
   const artworks = [
+    { id: 19, image: './Assets/Melo.png', title: 'My Melody!', type: 'art' },
+    { id: 20, image: './Assets/Illustration444.png', title: 'Illustration444', type: 'art' },
     { id: 1, image: './Assets/art1.png', title: 'Art Piece 1', type: 'art' },
     { id: 2, image: './Assets/art2.png', title: 'Art Piece 2', type: 'art' },
     { id: 3, image: './Assets/art3.gif', title: 'Art Piece 3', type: 'art' },
